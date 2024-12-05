@@ -32,5 +32,11 @@ config.line_height = 0.8
 -- Decorations
 config.window_decorations = "RESIZE"
 
+-- Cursor
+config.cursor_blink_rate = 500
+config.cursor_blink_ease_in = "Constant"
+config.cursor_blink_ease_out = "Constant"
+config.default_cursor_style = "BlinkingBlock"
+
 -- Return the config, do not add anything below this line
 return config
