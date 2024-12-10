@@ -7,23 +7,23 @@ local config = wezterm.config_builder()
 -- This is where you actually apply your config choices
 
 -- Changing the color scheme
-config.color_scheme = 'nord'
+config.color_scheme = 'Gruvbox dark, hard (base16)'
 
 -- Font size
-config.font_size = 25.0
+config.font_size = 22.5
 
 -- Font
-config.font = wezterm.font 'ComicCodeLigatures Nerd Font'
+config.font = wezterm.font 'JetBrainsMono Nerd Font Mono'
 
 -- Hide tab bar
 config.enable_tab_bar = false
 
 -- Padding
 config.window_padding = {
-  left = 7,
-  right = 2,
-  top = 0,
-  bottom = 0,
+  left = '5',
+  right = '0',
+  top = '0',
+  bottom = '0',
 }
 
 -- Decrease line height

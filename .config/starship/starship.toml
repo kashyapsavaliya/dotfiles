@@ -1,3 +1,5 @@
-[character]
-success_symbol = '[](bold green)'
-error_symbol = '[](bold red)'
+[git_branch]
+symbol = " "
+
+[git_status]
+format = "[$ahead_behind$untracked$modified]($style) "

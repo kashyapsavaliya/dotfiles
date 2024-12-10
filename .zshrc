@@ -1,3 +1,6 @@
+#---------- Path configuration ----------#
+
+export PATH="$HOME/.dotfiles/bin:$PATH"
 
 #---------- Tab completions ----------#
 
