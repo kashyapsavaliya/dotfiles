@@ -26,9 +26,6 @@ config.window_padding = {
   bottom = '0',
 }
 
--- Decrease line height
-config.line_height = 0.8
-
 -- Decorations
 config.window_decorations = "RESIZE"
 
