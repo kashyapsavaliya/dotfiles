@@ -3,3 +3,42 @@ symbol = " "
 
 [git_status]
 format = "[$ahead_behind$untracked$modified]($style) "
+
+[aws]
+disabled = true
+[azure]
+disabled = true
+[docker_context]
+disabled = true
+[lua]
+disabled = true
+[golang]
+disabled = true
+[java]
+disabled = true
+[kubernetes]
+disabled = true
+[nix_shell]
+disabled = true
+[nodejs]
+disabled = true
+[package]
+disabled = true
+[perl]
+disabled = true
+[php] 
+disabled = true
+[python]
+disabled = true
+[ruby]
+disabled = true
+[rust]
+disabled = true
+[scala]
+disabled = true
+[swift]
+disabled = true
+[terraform]
+disabled = true
+[zig]
+disabled = true
