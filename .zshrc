@@ -19,3 +19,6 @@ export STARSHIP_CONFIG=~/.config/starship/starship.toml
 
 alias v=nvim
 alias c="clear"
+
+#----- LSD -----#
+alias ls='lsd'
