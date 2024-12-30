@@ -1,0 +1,7 @@
+window-decoration = true
+cursor-style = block
+cursor-style-blink = true
+
+font-family = "JetBrainsMono NFM Regular"
+shell-integration-features = no-cursor
+theme = catppuccin-mocha
