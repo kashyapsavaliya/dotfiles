@@ -22,3 +22,7 @@ alias c="clear"
 
 #----- LSD -----#
 alias ls='lsd'
+
+precmd() {
+    echo -ne "\e[1 q"
+}
