@@ -18,7 +18,12 @@ export STARSHIP_CONFIG=~/.config/starship/starship.toml
 #---------- Aliases ----------#
 
 alias v=nvim
+alias t=tmux
+alias e="exit"
 alias c="clear"
+
+#----- Repos -----#
+alias dot="cd $HOME/.dotfiles"
 
 #----- LSD -----#
 alias ls='lsd'
