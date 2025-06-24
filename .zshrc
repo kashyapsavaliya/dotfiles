@@ -35,6 +35,7 @@ alias c="clear"
 
 #----- Repos -----#
 alias dot="cd $HOME/.dotfiles"
+alias website="cd $HOME/Developer/github.com/kashyapsavaliya/website"
 
 #----- LSD -----#
 alias ls='lsd'
