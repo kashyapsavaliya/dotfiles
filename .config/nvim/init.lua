@@ -14,4 +14,5 @@ vim.opt.rtp:prepend(lazypath)
 require('lazy').setup({
 	require 'plugins.colorscheme',
 	require 'plugins.neo-tree',
+    require 'plugins.telescope',
 })
