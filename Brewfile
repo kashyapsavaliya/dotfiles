@@ -1,0 +1,6 @@
+brew "wget"
+brew "telnet"
+brew "go"
+brew "lsd"
+brew "hugo"
+brew "git"
