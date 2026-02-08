@@ -1,13 +1,10 @@
-#---------- GPG + Yubikey for SSH ----------#
+#---------- Yubikey for SSH ----------#
 
-export GPG_TTY="$(tty)"
-
-if [ "${gnupg_SSH_AUTH_SOCK_by:-0}" -ne $$ ]; then
-export SSH_AUTH_SOCK="$(gpgconf --list-dirs agent-ssh-socket)"
+# Set a fixed socket and start the agent if it doesn't exist
+export SSH_AUTH_SOCK="$HOME/.ssh/agent.sock"
+if [[ ! -S "$SSH_AUTH_SOCK" ]]; then
+    ssh-agent -a "$SSH_AUTH_SOCK" > /dev/null
 fi
-
-gpgconf --launch gpg-agent
-gpg-connect-agent updatestartuptty /bye > /dev/null 2>&1
 
 #---------- Path configuration ----------#
 
