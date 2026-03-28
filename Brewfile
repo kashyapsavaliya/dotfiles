@@ -4,5 +4,6 @@ brew "go"
 brew "lsd"
 brew "hugo"
 brew "git"
+brew 'fzf'
 cask "claude-code"
 cask "claude"
