@@ -1,6 +1,7 @@
 window-decoration = true
 window-theme = "dark"
 window-save-state = always
+window-padding-x = 10
 # maximize window
 window-height = 9999
 window-width = 9999
@@ -10,8 +11,8 @@ cursor-style = block
 cursor-style-blink = true
 
 font-family = "JetBrainsMono NFM Regular"
-font-size = 15
-shell-integration-features = no-cursor
+font-size = 20
+shell-integration-features = no-cursor,sudo,ssh-terminfo,ssh-env
 theme = Catppuccin Mocha
 
 background = "#000000"
