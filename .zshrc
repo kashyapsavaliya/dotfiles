@@ -23,6 +23,11 @@ compinit
 eval "$(starship init zsh)"
 export STARSHIP_CONFIG=~/.config/starship/starship.toml
 
+#---------- Tools ----------#
+
+# Set up fzf key bindings and fuzzy completion
+source <(fzf --zsh)
+
 #---------- Aliases ----------#
 
 alias v=nvim
