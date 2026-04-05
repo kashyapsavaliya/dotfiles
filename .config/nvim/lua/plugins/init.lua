@@ -1,7 +1,11 @@
 local lualine = require('plugins.lualine')
 local colorscheme = require('plugins.colorscheme')
 
-local plugins = { lualine, colorscheme }
+local plugins = { 
+  "https://github.com/nvim-tree/nvim-web-devicons", -- Add this for lualine
+  colorscheme, 
+  lualine 
+}
 
 vim.pack.add(plugins)
 
