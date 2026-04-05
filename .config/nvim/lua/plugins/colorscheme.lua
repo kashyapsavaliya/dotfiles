@@ -1,8 +1,10 @@
 return {
-  "catppuccin/nvim",
+  -- Use 'src' for the URL
+  src = "https://github.com/catppuccin/nvim",
   name = "catppuccin",
-  priority = 1000,
-  config = function()
+  
+  -- Use 'setup' instead of 'config'
+  setup = function()
     require("catppuccin").setup({
       flavour = "mocha",
       color_overrides = {
@@ -13,6 +15,8 @@ return {
         },
       },
     })
+    
+    -- This must be inside the setup function
     vim.cmd.colorscheme("catppuccin")
   end,
 }
