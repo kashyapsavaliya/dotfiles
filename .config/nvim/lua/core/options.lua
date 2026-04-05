@@ -16,3 +16,4 @@ vim.opt.shiftwidth = 2
 vim.opt.softtabstop = 4
 vim.opt.tabstop = 4
 vim.opt.signcolumn = "yes"
+vim.opt.spelllang = { "en_us" }
