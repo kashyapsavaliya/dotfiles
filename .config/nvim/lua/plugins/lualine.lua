@@ -31,6 +31,7 @@ return {
         theme = "auto",
         component_separators = "",
         section_separators = "",
+        globalstatus = true,
       },
       sections = {
         lualine_b = section_b,
