@@ -9,7 +9,7 @@ return {
   -- 3. Rename 'config' to 'setup'
   setup = function()
     local section_b = {
-      "branch",
+      { "branch", icon = " " },
       "diff",
       {
         "diagnostics",
