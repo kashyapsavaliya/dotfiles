@@ -1,0 +1,12 @@
+#!/bin/bash
+read -p "Post name: " POST_NAME
+POST_DIR="/Users/kashyapsavaliya/Developer/github.com/kashyapsavaliya/website/content/posts/$POST_NAME"
+mkdir -p "$POST_DIR"
+cat > "$POST_DIR/index.md" << EOF
+---
+title: "$POST_NAME"
+date: $(date +%Y-%m-%dT%H:%M:%S%z)
+draft: true
+---
+EOF
+echo "Created $POST_DIR/index.md"
