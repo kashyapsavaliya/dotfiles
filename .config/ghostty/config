@@ -10,7 +10,12 @@ window-width = 9999
 cursor-style = block
 cursor-style-blink = true
 
-font-family = "JetBrainsMono NFM Regular"
+font-family = Berkeley Mono Regular
+font-family-bold = Berkeley Mono Bold
+font-family-italic = Berkeley Mono Oblique
+font-family-bold-italic = Berkeley Mono Bold Oblique
+font-feature = +calt
+font-feature = +ss02
 font-size = 20
 shell-integration-features = no-cursor,sudo,ssh-terminfo,ssh-env
 theme = Catppuccin Mocha
