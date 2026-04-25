@@ -1,10 +1,10 @@
 #---------- Yubikey for SSH ----------#
 
 # Set a fixed socket and start the agent if it doesn't exist
-export SSH_AUTH_SOCK="$HOME/.ssh/agent.sock"
-if [[ ! -S "$SSH_AUTH_SOCK" ]]; then
-    ssh-agent -a "$SSH_AUTH_SOCK" > /dev/null
-fi
+#export SSH_AUTH_SOCK="$HOME/.ssh/agent.sock"
+#if [[ ! -S "$SSH_AUTH_SOCK" ]]; then
+#    ssh-agent -a "$SSH_AUTH_SOCK" > /dev/null
+#fi
 
 #---------- Path configuration ----------#
 
