@@ -1,6 +1,6 @@
 #!/bin/bash
 read -p "Post name: " POST_NAME
-POST_DIR="/Users/kashyapsavaliya/Developer/github.com/kashyapsavaliya/website/content/posts/$POST_NAME"
+POST_DIR="/Users/kashyapsavaliya/Developer/github.com/kashyapsavaliya/websitev2/content/posts/$POST_NAME"
 mkdir -p "$POST_DIR"
 cat > "$POST_DIR/index.md" << EOF
 ---
