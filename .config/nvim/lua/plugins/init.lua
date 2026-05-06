@@ -3,15 +3,16 @@ local colorscheme = require('plugins.colorscheme')
 local nvimtree = require('plugins.nvim-tree')
 local whichkey = require('plugins.which-key')
 local rendermd = require('plugins.render-markdown')
+local ts = require('plugins.nvim-treesitter')
 
 local plugins = { 
   "https://github.com/nvim-tree/nvim-web-devicons", -- Add this for lualine
-  "https://github.com/nvim-treesitter/nvim-treesitter",
   colorscheme, 
   lualine,
   nvimtree,
   whichkey,
   rendermd,
+  ts,
 }
 
 vim.pack.add(plugins)
