@@ -46,3 +46,5 @@ alias ls='lsd'
 precmd() {
     echo -ne "\e[1 q"
 }
+
+export CLAUDE_CODE_TMUX_TRUECOLOR=1
