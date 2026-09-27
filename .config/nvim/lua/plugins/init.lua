@@ -2,16 +2,17 @@ local lualine = require('plugins.lualine')
 local colorscheme = require('plugins.colorscheme')
 local nvimtree = require('plugins.nvim-tree')
 local whichkey = require('plugins.which-key')
-local rendermd = require('plugins.render-markdown')
 local ts = require('plugins.nvim-treesitter')
 
-local plugins = { 
+local plugins = {
   "https://github.com/nvim-tree/nvim-web-devicons", -- Add this for lualine
-  colorscheme, 
+  -- Runs setup() itself from its plugin/ file; only needs an explicit call for
+  -- custom options, per its README.
+  { src = "https://github.com/MeanderingProgrammer/render-markdown.nvim", name = "render-markdown" },
+  colorscheme,
   lualine,
   nvimtree,
   whichkey,
-  rendermd,
   ts,
 }
 

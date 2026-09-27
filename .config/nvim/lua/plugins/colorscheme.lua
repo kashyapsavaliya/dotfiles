@@ -1,9 +1,6 @@
 return {
-  -- Use 'src' for the URL
   src = "https://github.com/catppuccin/nvim",
   name = "catppuccin",
-  
-  -- Use 'setup' instead of 'config'
   setup = function()
     require("catppuccin").setup({
       flavour = "mocha",
@@ -15,8 +12,8 @@ return {
         },
       },
     })
-    
-    -- This must be inside the setup function
+
+    -- Catppuccin's setup() must run before the colorscheme is loaded.
     vim.cmd.colorscheme("catppuccin")
   end,
 }

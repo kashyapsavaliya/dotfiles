@@ -3,7 +3,5 @@ return {
   name = "which-key",
   setup = function()
     require("which-key").setup({})
-
-    local wk = require("which-key")
   end,
 }

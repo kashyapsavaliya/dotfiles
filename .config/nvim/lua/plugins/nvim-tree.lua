@@ -2,31 +2,16 @@ return {
   src = "https://github.com/nvim-tree/nvim-tree.lua",
   name = "nvim-tree",
   setup = function()
+    -- Defaults everywhere except root/file syncing: keep the tree rooted at the
+    -- cwd and highlight whatever file is focused, so the tree follows you
+    -- instead of needing to be re-navigated.
     require("nvim-tree").setup({
-      renderer = {
-        icons = {
-          show = {
-            file = false,
-            folder = false,
-            folder_arrow = true,
-            git = true,
-          },
-        },
-      },
-      view = {
-        width = 35,
-        side = "left",
-      },
       sync_root_with_cwd = true,
       respect_buf_cwd = true,
-      update_cwd = true,
       update_focused_file = {
         enable = true,
-        update_cwd = true,
-        update_root = true,
+        update_root = { enable = true },
       },
     })
-
-    vim.g.nvim_tree_respect_buf_cwd = 1
   end,
 }

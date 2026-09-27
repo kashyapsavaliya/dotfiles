@@ -1,12 +1,8 @@
 return {
-  -- 1. Specify the source URL
   src = "https://github.com/nvim-lualine/lualine.nvim",
   name = "lualine",
-  
-  -- 2. Dependencies are handled in the main list, but we can note them here
-  -- In 0.12, these must be explicitly added to the vim.pack.add call
-  
-  -- 3. Rename 'config' to 'setup'
+  -- vim.pack has no dependency field; nvim-web-devicons is added separately in
+  -- plugins/init.lua.
   setup = function()
     local section_b = {
       { "branch", icon = " " },

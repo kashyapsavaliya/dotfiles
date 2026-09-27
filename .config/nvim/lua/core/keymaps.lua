@@ -3,7 +3,7 @@ local function map(m, k, v, opts)
   vim.keymap.set(m, k, v, options)
 end
 
-map("", "<Space>", "<Nop>", opts)
+map("", "<Space>", "<Nop>")
 vim.g.mapleader = " "
 
 map("n", "<leader>t", ":NvimTreeToggle<CR>", { desc = "Toggle nvim-tree" })
