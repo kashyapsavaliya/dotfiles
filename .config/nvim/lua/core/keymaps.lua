@@ -9,3 +9,4 @@ vim.g.mapleader = " "
 map("n", "<leader>t", ":NvimTreeToggle<CR>", { desc = "Toggle nvim-tree" })
 map("n", "<leader>w", ":w<CR>", { desc = "Save file" })
 map("n", "<leader>R", ":so %<CR>", { desc = "Reload config" })
+map("n", "gd", vim.lsp.buf.definition, { desc = "Go to definition" })
